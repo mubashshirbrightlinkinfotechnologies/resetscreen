@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Reset Form Section -->
+<LinearLayout
+    android:id="@+id/resetFormLayout"
+    android:layout_width="404dp"
+    android:layout_height="731dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <!-- Education TextView -->
+    <TextView
+        android:id="@+id/educationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Education"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- School TextView -->
+    <TextView
+        android:id="@+id/schoolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="9dp"
+        android:text="School"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- School EditText -->
+    <EditText
+        android:id="@+id/schoolEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_border_box" />
+
+    <!-- Degree TextView -->
+    <TextView
+        android:id="@+id/degreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="9dp"
+        android:text="Degree"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Degree EditText -->
+    <TextView
+        android:id="@+id/degreePlaceholderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_border_box"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="Select Degree"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Start Date TextView -->
+
+        <TextView
+            android:id="@+id/startDateTextView"
+            android:layout_width="131dp"
+            android:layout_height="53dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="9dp"
+            android:text="Start Date"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <!-- Start Date EditText -->
+
+        <TextView
+            android:id="@+id/startDatePlaceholderTextView"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_box"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Select Start Date"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/endDatePlaceholderTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startDateTextView"
+            app:layout_constraintVertical_bias="0.483" />
+
+
+        <!-- End Date TextView -->
+
+        <TextView
+            android:id="@+id/endDateTextView"
+            android:layout_width="113dp"
+            android:layout_height="52dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="9dp"
+            android:text="End Date"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toEndOf="@+id/startDateTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- End Date EditText -->
+
+        <TextView
+            android:id="@+id/endDatePlaceholderTextView"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_box"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Select End Date"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/endDateTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Add Resume EditText -->
+    <TextView
+        android:id="@+id/addResumeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="9dp"
+        android:text="Add Resume"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addResumeEditText"
+        android:background="@drawable/bg_border_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF2568" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Previous"
+        android:textColor="#FF2568" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
